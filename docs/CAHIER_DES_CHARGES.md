@@ -1,6 +1,6 @@
 # Cahier des charges
 
-This "Cahier des charges" will define everything that must and must not be done in the in order to reach the V1 goal of this project.
+This "Cahier des charges" will define everything that must and must not be done in the in order to reach the V1 & V2 goal of this project.
 
 ## General
 
@@ -9,6 +9,59 @@ Main guidelines:
 - Godot Engine will be used
 - Logic should be completely separated from visuals
 - Chat should not write any code, with the exception of minimal refactorings
+
+### V1
+
+The V1 should be the absolute minimal Proof of Concept. It will have no real game loop and essentially just be a sandbox, like minecraft creative mode, where i can just play around, moving and fighting legions.
+
+What V1 should contain:
+
+- Map (procedually generated)
+- Units (with animations IDLE, MOVE, ATTACK)
+- Unit types (some JSON with all the unit stats)
+- Legions (correctly handling idle, move and attack positioning of the units)
+- Combat (simple melee-only combat)
+- Simple UI to select and move/combat legions
+
+What V1 should NOT contain:
+
+- Menu
+- Polish
+- Game loop
+- Realms (Teams)
+- AI
+- Any turn system (all units can move and attack at any time)
+
+### V2
+
+The V2 should build upon the V1 and be a playable and fun MVP Game.
+
+The V2 game will either be:
+
+- Roguelike (similar to SOVL)
+- Draftlike (with a gold/point cost for each unit)
+- NOT a combination of those, cause remember, it should be SIMPLE!
+
+The V2 will add following things:
+
+- Simple menu
+- Game loop and game ends
+- Polish
+- Unit anims HIT & DEATH
+- Realms (different teams basically)
+- Turn system
+- Simple AI
+
+The V2 will not implement any of the features stated in V3!
+
+### V3
+
+The V3 (only hypothetical for now) will be a place to experiment with new features.
+
+Feature ideas:
+
+- Ranged combat
+- Banners?
 
 ## Logic
 
@@ -44,8 +97,8 @@ All animations should be made by "procedually" by transforming the sprite positi
 - Idle (squish and squash)
 - Move (hopping?)
 - Attack (stomp forward?)
-- Hit (full white shader)
-- Death (?)
+- Hit (full white shader) (V2!)
+- Death (?) (V2!)
 
 ## UI
 
@@ -53,6 +106,7 @@ All animations should be made by "procedually" by transforming the sprite positi
 - Info panel about units/legions/(tiles) (?)
 - Simple menu (?)
 - Tile/legions highlights, for moving, targeting.. (?)
+- Damage & Death counter after combat
 
 ## Sound
 
