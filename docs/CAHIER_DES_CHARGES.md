@@ -30,7 +30,6 @@ What V1 should NOT contain:
 - Game loop
 - Realms (Teams)
 - AI
-- Any turn system (all units can move and attack at any time)
 
 ### V2
 
